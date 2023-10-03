@@ -1,3 +1,4 @@
+
 import { useAppSelector } from "../hooks/redux"
 
 export function FavouritesPage() {
@@ -7,8 +8,9 @@ export function FavouritesPage() {
         <div className="flex justify-center pt-10 mx-auto h-screen w-screen">
             <ul className="list-none">
                 {favourites.map((f) => (
+                    
                     <li key={f}>
-                        <a href="f" target="_blank">{f}</a>
+                        <a href={f} target="_blank">{f}</a>
                     </li>
                 ))}
             </ul>
